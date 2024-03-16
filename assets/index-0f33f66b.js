@@ -955,6 +955,8 @@ Valid keys: `+JSON.stringify(Object.keys(B),null,"  "));var W=N(he,F,oe,ge,de+".
   background: transparent;
   border: none;
   color: #8baeff;
+  position: relative;
+  z-index: 1;
 `,ET=()=>{const e=co(fm),t=Da();return f.jsxs(wT,{children:[e&&f.jsx(xT,{}),f.jsx(kT,{children:"My daily norma"}),f.jsxs(bT,{children:[f.jsx(ST,{children:"1.5 L"}),f.jsx(_T,{type:"button",onClick:()=>{t(O_(!0))},children:"Edit"})]})]})},CT=L.div`
   margin-bottom: 40px;
   @media only screen and (min-width: 768px) {
