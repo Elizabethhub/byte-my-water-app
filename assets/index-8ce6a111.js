@@ -105,20 +105,20 @@ Error generating stack: `+i.message+`
 `,IS=e=>f.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:28,height:28,fill:"none",...e,children:[f.jsxs("g",{stroke:"#2F2F2F",clipPath:"url(#a)",children:[f.jsx("circle",{cx:14,cy:14,r:13.5}),f.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M17.5 8.256c0 .952-.368 1.865-1.025 2.538A3.457 3.457 0 0 1 14 11.845a3.457 3.457 0 0 1-2.475-1.05 3.637 3.637 0 0 1-1.026-2.54c0-.951.37-1.864 1.026-2.538A3.457 3.457 0 0 1 14 4.666c.928 0 1.819.378 2.475 1.051A3.637 3.637 0 0 1 17.5 8.256ZM7 21.77c.03-1.883.78-3.68 2.09-5A6.912 6.912 0 0 1 14 14.708c1.837 0 3.6.74 4.91 2.062a7.269 7.269 0 0 1 2.09 5 16.39 16.39 0 0 1-7 1.563c-2.498 0-4.869-.56-7-1.563Z"})]}),f.jsx("defs",{children:f.jsx("clipPath",{id:"a",children:f.jsx("path",{fill:"#fff",d:"M0 0h28v28H0z"})})})]}),LS=e=>f.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:12,height:7,fill:"none",...e,children:f.jsx("path",{fill:"#407BFF",fillRule:"evenodd",d:"M6.353 6.854a.5.5 0 0 1-.707 0l-5-5a.5.5 0 0 1 .707-.707l4.646 4.647 4.647-4.647a.5.5 0 1 1 .707.707l-5 5Z",clipRule:"evenodd"})}),zS=d3`
   from {
     opacity: 0;
-    transform: translateY(-100%);
+    top: -50%;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    top: 50%;
   }
 `,BS=d3`
   from {
     opacity: 1;
-    transform: translateY(0);
+    top: 50%;
   }
   to {
     opacity: 0;
-    transform: translateY(-100%);
+    top: -50%;
   }
 `,WS=d3`
   from {
@@ -154,30 +154,28 @@ Error generating stack: `+i.message+`
   height: 260px;
   background: #fff;
   position: fixed;
-  top: 11%;
-  left: 5%;
-  /* transform: translate(-50%, -50%); */
-  /* opacity: ${e=>e.$visible?"1":"0"};  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: ${e=>e.$visible?"1":"0"};
-  animation: ${e=>e.$visible?zS:BS} 1.5s ease;
-
+  visibility: ${e=>e.$visible?"visible":"hidden"};
+  transition:
+    opacity 0.5s,
+    visibility 0.5s;
+  animation: ${e=>e.$visible?zS:BS} 0.9s;
   z-index: 999;
   display: flex;
   flex-direction: column;
   gap: 24px;
 
   @media only screen and (min-width: 768px) {
-    top: 20%;
-
-    left: 11%;
     width: 76.8%;
-
     max-width: 592px;
     height: 208px;
   }
+
   @media only screen and (min-width: 1440px) {
-    top: 30%;
-    left: 30%;
+    /* Додайте аналогічні стилі, як для мобільних пристроїв */
   }
 `,J4=$.div`
   position: fixed;
