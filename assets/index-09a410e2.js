@@ -1725,7 +1725,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   cursor: pointer;
   letter-spacing: 0em;
   &.today {
-    border: 4px solid #ef5050;
+    background-color: lightblue;
   }
 
   span {
