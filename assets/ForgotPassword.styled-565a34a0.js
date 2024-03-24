@@ -1,4 +1,4 @@
-import{s as t}from"./index-eb12cff1.js";const n=t.div`
+import{s as t}from"./index-8e6f9dcd.js";const n=t.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,10 +8,10 @@ import{s as t}from"./index-eb12cff1.js";const n=t.div`
   @media only screen and (min-width: 1280px) {
     max-width: 768px;
   }
-`,r=t.form`
+`,i=t.form`
   display: flex;
   flex-direction: column;
-`,i=t.h2`
+`,r=t.h2`
   font-weight: 500;
   font-size: 26px;
   line-height: 32px;
@@ -42,7 +42,7 @@ import{s as t}from"./index-eb12cff1.js";const n=t.div`
     font-size: 16px;
     line-height: 20px;
   }
-`,x=t.button`
+`,l=t.button`
   margin-bottom: 16px;
   background-color: var(--blue);
   border: 1px solid var(--blue);
@@ -52,7 +52,7 @@ import{s as t}from"./index-eb12cff1.js";const n=t.div`
   max-width: 150px;
   /* margin-left: auto; */
 
-  box-shadow: 0 4px 8px 0 rgba(64, 123, 255, 0.34);
+  box-shadow: ${o=>o.theme.boxShodov};
   transition: all 0.4s;
 
   &:hover,
@@ -64,4 +64,4 @@ import{s as t}from"./index-eb12cff1.js";const n=t.div`
   @media only screen and (min-width: 768px) {
     /* font-size: 18px; */
   }
-`;export{n as F,i as a,r as b,a as c,p as d,x as e};
+`;export{n as F,r as a,i as b,a as c,p as d,l as e};
