@@ -1,4 +1,4 @@
-import{s as o}from"./index-ba023575.js";const t=o.div`
+import{s as t}from"./index-f3666f3b.js";const n=t.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,26 +8,27 @@ import{s as o}from"./index-ba023575.js";const t=o.div`
   @media only screen and (min-width: 1280px) {
     max-width: 768px;
   }
-`,e=o.form`
+`,r=t.form`
   display: flex;
   flex-direction: column;
-`,r=o.h2`
+`,i=t.h2`
   font-weight: 500;
   font-size: 26px;
   line-height: 32px;
   margin-bottom: 25px;
-`,n=o.label`
+`,a=t.label`
   display: flex;
   flex-direction: column;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 16px;
   position: relative;
-`,a=o.input`
+`,p=t.input`
   margin-top: 8px;
   padding: 12px 10px;
   border-radius: 6px;
-  border: 1px solid var(--primary-mediumblue);
+  background-color: ${o=>o.theme.formInputBackground};
+  border: 1px solid var(${o=>o.theme.inputOnlyColor});
   outline: none;
   color: var(--blue);
   margin-bottom: 20px;
@@ -37,15 +38,15 @@ import{s as o}from"./index-ba023575.js";const t=o.div`
   }
 
   &::placeholder {
-    color: var(--primary-blue);
+    color: var(${o=>o.theme.inputColorText});
     font-size: 16px;
     line-height: 20px;
   }
-`,p=o.button`
+`,x=t.button`
   margin-bottom: 16px;
   background-color: var(--blue);
   border: 1px solid var(--blue);
-  color: var(--white);
+  color: ${o=>o.theme.buttonColor};
   padding: 8px 30px;
   border-radius: 10px;
   max-width: 150px;
@@ -63,4 +64,4 @@ import{s as o}from"./index-ba023575.js";const t=o.div`
   @media only screen and (min-width: 768px) {
     /* font-size: 18px; */
   }
-`;export{t as F,r as a,e as b,n as c,a as d,p as e};
+`;export{n as F,i as a,r as b,a as c,p as d,x as e};
