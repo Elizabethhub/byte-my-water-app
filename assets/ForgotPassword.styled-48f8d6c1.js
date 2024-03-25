@@ -1,4 +1,4 @@
-import{s as t}from"./index-85be99fb.js";const n=t.div`
+import{s as t}from"./index-953e6951.js";const n=t.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,16 @@ import{s as t}from"./index-85be99fb.js";const n=t.div`
   line-height: 24px;
   margin-bottom: 16px;
   position: relative;
+  button {
+    top: 48%;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    button {
+      top: 48%;
+      right: 37%;
+    }
+  }
 `,p=t.input`
   margin-top: 8px;
   padding: 12px 10px;
