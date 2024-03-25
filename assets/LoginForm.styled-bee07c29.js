@@ -1,4 +1,4 @@
-import{s as r,ak as e}from"./index-9271c07b.js";const t=r.div`
+import{s as r,ak as e}from"./index-01b09d68.js";const t=r.div`
   margin-top: 24px;
   margin-bottom: 66px;
   @media only screen and (min-width: 768px) {
