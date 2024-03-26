@@ -1,4 +1,4 @@
-import{s,u as d,j as a,J as p}from"./index-f02f4577.js";import{F as M,H as n,S as x,c as Z}from"./LoginForm.styled-3cd95634.js";const j=s.section`
+import{s,u as d,j as a,J as p}from"./index-aa6136aa.js";import{F as M,H as n,S as x,c as Z}from"./LoginForm.styled-2be50627.js";const j=s.section`
   height: calc(100vh - 60px);
 
   position: relative;
